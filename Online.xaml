@@ -1,0 +1,227 @@
+﻿<Window x:Class="Registration.Online"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registration"
+        mc:Ignorable="d"
+        Title="Online" Background="LightCyan"  Height="800" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <Label x:Name="lblFIRSTNAME" Width="200" Height="29" Margin=" 10,5,5,10" Padding=" 10,5" Target="{Binding ElementName=txtusername}">
+                    <Label.Content>
+                        <StackPanel Orientation="Horizontal" >
+                            <Image Source="https://cdn4.iconfinder.com/data/icons/e-commerce-icon-set/48/Username_2-512.png " Width="30" Height="28" />
+                            <AccessText Text="    _FIRST NAME"></AccessText>
+                        </StackPanel>
+                    </Label.Content>
+                </Label>
+                <TextBox x:Name="txtfirname" Width="350" Height="30" Margin=" 10,5,5,10" Padding=" 10,5" TabIndex="15" ></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <Label x:Name="lblSECONDNAME" Width=" 200" Height="29" Margin=" 10,5,5,10" Padding=" 10,5" Target="{Binding ElementName=txtpassword}">
+                    <Label.Content >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="https://cdn3.iconfinder.com/data/icons/iconpark-vol-10/48/edit-name-512.png" Width="30" Height="30" HorizontalAlignment="Left"></Image>
+                            <AccessText Text="_SECOND NAME"></AccessText>
+                        </StackPanel>
+                    </Label.Content>
+                </Label>
+                <TextBox  x:Name="txtsec" Width=" 350" Height=" 30" Margin=" 10,5,5,10" ></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <Label x:Name="lblGENDER" Width=" 200" Height="29" Margin=" 10,5,5,10" Padding=" 10,5" Target="{Binding ElementName=txtpassword}">
+                    <Label.Content >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="https://cdn3.iconfinder.com/data/icons/education-405/48/83_student_avatar_gender_school_female_male_love-512.png" Width="30" Height="30" HorizontalAlignment="Left"></Image>
+                            <AccessText Text="_GENDER"></AccessText>
+                        </StackPanel>
+                    </Label.Content>
+                </Label>
+                <RadioButton Content=" male" Width=" 100" Margin=" 10,5,5,10"></RadioButton>
+                <RadioButton Content=" female"  Width=" 100" Margin=" 10,5,5,10"></RadioButton>
+             
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" >
+                <Label x:Name="lblDATEOFBIRTH" Width=" 200" Height="29" Margin=" 10,5,5,10" Padding=" 10,5" Target="{Binding ElementName=txtpassword}">
+                    <Label.Content >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="https://cdn4.iconfinder.com/data/icons/hand-drawn-business-ui-pack/65/Date_Of_Birth-64.png" Width="30" Height="30" HorizontalAlignment="Left"></Image>
+                            <AccessText Text="_DATE OF BIRTH"></AccessText>
+                        </StackPanel>
+                    </Label.Content>
+                </Label>
+                <Label Content=" Month"  FontSize=" 10" FontWeight="Bold"></Label>
+                <ComboBox Name="MONTH" Width=" 50">
+
+                    <ComboBoxItem Content="January" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="Febuary" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="March"></ComboBoxItem>
+                    <ComboBoxItem Content="April" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="May" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="June" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="July" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="August" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="September" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="October" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="November" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="December" Width="100"></ComboBoxItem>
+          
+                </ComboBox>
+
+                <Label Content="DATE"  FontSize=" 10" FontWeight="Bold"></Label>
+                <ComboBox Name="DATE" Width=" 50" HorizontalAlignment="Left">
+
+                    <ComboBoxItem Content="1" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="2" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="3"></ComboBoxItem>
+                    <ComboBoxItem Content="4" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="5" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="6" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="7" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="8" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="9" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="10" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="11" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="12" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="13" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="14" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="15" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="16" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="17" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="18" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="19" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="20" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="21" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="22" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="23" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="24" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="25" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="26" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="27" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="28" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="29" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="30" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="31" Width="100"></ComboBoxItem>
+
+
+                </ComboBox>
+                <Label Content="YEAR"  FontSize=" 10" FontWeight="Bold"></Label>
+                <ComboBox Name="YEAR" Width=" 50" HorizontalAlignment="Left">
+
+                    <ComboBoxItem Content="2001" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="2002" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="2003"></ComboBoxItem>
+                    <ComboBoxItem Content="2004" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="2005" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="2006" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="2007" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="2008" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="2009" Width="100"></ComboBoxItem>
+                    <ComboBoxItem Content="2010" Width="100"></ComboBoxItem>
+                </ComboBox>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" >
+                <Label x:Name="lblQualification" Width=" 200" Height="29" Margin=" 10,5,5,10" Padding=" 10,5" Target="{Binding ElementName=txtpassword}">
+                    <Label.Content >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="https://cdn3.iconfinder.com/data/icons/business-654/64/Contract-patent-guarantee-certificate-qualification-business-finance-commerce-shopping-degree-64.png" Width="30" Height="30" HorizontalAlignment="Left"></Image>
+                            <AccessText Text="_QUALIFICATION"></AccessText>
+                        </StackPanel>
+                    </Label.Content>
+                </Label>
+                <RadioButton  Content="UG"  FontSize=" 10" FontWeight="Bold" Width=" 100" Margin=" 10,5,5,10"></RadioButton>
+                <RadioButton Content="PG"  FontSize=" 10" FontWeight="Bold" Width=" 100" Margin="10,5,5,10" ></RadioButton>
+                <RadioButton  Content="diplamo"  FontSize=" 10" FontWeight="Bold" Width=" 100" Margin=" 10,5,5,10"></RadioButton>
+
+             
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <Label x:Name="lblEMAIL" Width=" 200" Height="29" Margin=" 10,5,5,10" Padding=" 10,5" Target="{Binding ElementName=txtpassword}">
+                    <Label.Content >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="https://cdn4.iconfinder.com/data/icons/blue-common-symbols-vol-2/1981/email_2_messaging_inbox_emailed_app_mobile-64.png" Width="30" Height="30" HorizontalAlignment="Left"></Image>
+                            <AccessText Text="_EMAIL ID"></AccessText>
+                        </StackPanel>
+                    </Label.Content>
+                </Label>
+                <TextBox  x:Name="txtEM" Width=" 350" Height=" 30" Margin=" 10,5,5,10" ></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" >
+                <Label x:Name="lblADDRESS" Width=" 200" Height="29" Margin=" 10,5,5,10" Padding=" 10,5" Target="{Binding ElementName=txtpassword}">
+                    <Label.Content >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="https://cdn0.iconfinder.com/data/icons/ui-essence/32/_96ui-64.png" Width="30" Height="30" HorizontalAlignment="Left"></Image>
+                            <AccessText Text="_ADDRESS"></AccessText>
+                        </StackPanel>
+                    </Label.Content>
+                </Label>
+                <TextBox  x:Name="txtADD" Width=" 450" Height=" 30" Margin=" 10,5,5,10" ></TextBox>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" >
+                <Label x:Name="lblstate" Width=" 200" Height="29" Margin=" 10,5,5,10" Padding=" 10,5" Target="{Binding ElementName=txtpassword}">
+                    <Label.Content >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="https://cdn3.iconfinder.com/data/icons/world-landmark-vol-2/512/01-empire-state-building-manhattan-64.png" Width="30" Height="30" HorizontalAlignment="Left"></Image>
+                            <AccessText Text="STATE"></AccessText>
+                        </StackPanel>
+                    </Label.Content>
+                </Label>
+                <ComboBox>
+                   
+                    <ComboBox Name="state" Width=" 150"  Padding=" 10,5,5,10" Margin=" 10,5,5,10" HorizontalAlignment="Left">
+
+                        <ComboBoxItem Content="ANDRA PRADESH" Width="100"></ComboBoxItem>
+                        <ComboBoxItem Content="ASSAM" Width="100"></ComboBoxItem>
+                        <ComboBoxItem Content="TAMILNADU" Width=" 100"></ComboBoxItem>
+                        <ComboBoxItem Content="KERALA" Width="100"></ComboBoxItem>
+                        <ComboBoxItem Content="MANIPUR" Width="100"></ComboBoxItem>
+                       </ComboBox> 
+                </ComboBox>
+             
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" >
+                <Label x:Name="lblcountry" Width=" 200" Height="29" Margin=" 10,5,5,10" Padding=" 10,5" Target="{Binding ElementName=txtpassword}">
+                    <Label.Content >
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="https://cdn3.iconfinder.com/data/icons/world-landmark-vol-2/512/01-empire-state-building-manhattan-64.png" Width="30" Height="30" HorizontalAlignment="Left"></Image>
+                            <AccessText Text="_COUNTRY"></AccessText>
+                        </StackPanel>
+                    </Label.Content>
+                </Label>
+                <ComboBox >
+                   
+                    <ComboBox Name="country" Width=" 50"  Padding=" 10,5,5,10" Margin=" 10,5,5,10" HorizontalAlignment="Left">
+
+                        <ComboBoxItem Content="INDIA" Width="100"></ComboBoxItem>
+                        <ComboBoxItem Content="PAKISTHAN" Width="100"></ComboBoxItem>
+                        <ComboBoxItem Content="AMERICA" Width=" 100"></ComboBoxItem>
+                        <ComboBoxItem Content="RUSSIA" Width="100"></ComboBoxItem>
+                        <ComboBoxItem Content="AUSTRALIA" Width="100"></ComboBoxItem>
+                    </ComboBox>
+                </ComboBox>
+
+
+           
+            </StackPanel>
+
+
+
+
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"  >
+                <Button x:Name ="btnREGISTER" Foreground="Red"  Margin=" 10,25,10,10"  Padding=" 10,5,10,10"   Content="REGISTER"></Button>
+            </StackPanel>
+            <Label x:Name="lblnumber"></Label>
+        </StackPanel>
+    </Grid>
+</Window>
